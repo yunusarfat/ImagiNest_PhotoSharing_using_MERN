@@ -30,7 +30,8 @@ function ImageGallary() {
       formData.append("images", file);
     });
     try {
-      const url = "http://localhost:8080/api/images/upload-images";
+      const url = "https://imaginest-photosharing-using-mern.onrender.com/api/images";
+
       const options = {
         method: "POST",
         // ❗ Remove manual content-type setting

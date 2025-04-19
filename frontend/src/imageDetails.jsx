@@ -7,7 +7,8 @@ function ImageDetails() {
 
   const fetchImageDetails = async () => {
     try {
-      const url = `http://localhost:8080/api/images/${id}`;
+      const url = `https://imaginest-photosharing-using-mern.onrender.com/api/images/${id}`;
+
       const result = await fetch(url);
       const { data } = await result.json();
       setImageDetails(data);
